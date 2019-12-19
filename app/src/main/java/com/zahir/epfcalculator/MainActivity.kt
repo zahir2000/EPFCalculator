@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
             cal.set(Calendar.DAY_OF_MONTH, dayOfMonth)
 
             textViewSelectDob.text = sdf.format(cal.time)
-
             dob = cal.get(Calendar.YEAR)
 
             textViewCalculatedAge.text = calculateAge(dob).toString()
